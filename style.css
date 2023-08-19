@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #d5d0d0;
+}
+
+section:nth-child(2n){
+    background-color: white;
+}
+
+/* CSS for phase 1  */
+
+header{
+    width: 100%;
+    height: 60vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,156,156,1) 0%, rgba(179,201,241,1) 90% );
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 16px 0px 4px 0px;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    margin: 4px 0px;
+}
+
+ul a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul li:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+ul li:hover:after {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user_name{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.social_links{
+    position: relative;
+    top: -40px;
+}
+
+/* css for phase 2  */
+
+.info{
+    padding-bottom: 8%;
+}
+
+.pic{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.pic img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px #d5d0d0;
+    position: relative;
+    top: -100px;
+}
+
+.desc{
+    padding: 0px 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .desc{
+        padding: 0;
+        overflow: scroll;
+    }
+}
+
+.desc p{
+    font-size: larger;
+    line-height: 8mm;
+}
+
+/* css for phase 3 [ Skills ]  */
+
+.skills{
+    height: 60vh;
+}
+
+@media screen and (max-width: 800px) {
+    .skills{
+        height: auto;
+    }
+}
+
+.containerA{
+    margin: 10vh 0px;
+}
+
+.containerA h1{
+    text-align: center;
+    font-size: 2rem;
+    color: lightseagreen;
+}
+
+.containerB{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 100px;
+}
+
+.skillsbox{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 30px 60px;
+    overflow: hidden;
+    background-color: rgb(241, 236, 236);
+    box-shadow: 2px 0px 9px 0px rgb(199, 198, 198);
+}
+
+.h5center{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 12px 0px 0px 25px;
+    height: 100%;
+    color: black;
+
+}
+
+#sa{
+    width: 80%;
+    background-color: rgb(3, 252, 231);
+}
+#sb{
+    width: 70%;
+    background-color: yellow;
+}
+#sc{
+    width: 60%;
+    background-color: yellow;
+}
+#sd{
+    width: 70%;
+    background-color: yellow;
+}
+#se{
+    width: 90%;
+    background-color: rgb(3, 252, 231);
+}
+#sf{
+    width: 55%;
+    background-color: red;
+}
+
+/* work experience  */
+
+.work_experience{
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.webox{
+    width: 400px;
+    height: 250px;
+    margin: 30px 0px;
+    box-sizing: border-box;
+    padding: 2px 14px;
+    box-shadow: 0px 0px 8px 6px rgb(241, 237, 237);
+}
+
+.float-right{
+    text-align: right;
+}
+
+/* .right_container{
+    display: block;
+    position: relative;
+    left: 60%;
+    background-color: aqua;
+} */
+
+.webox:nth-child(2n){
+    display: block;
+    position: relative;
+    left: 60%;
+    /* background-color: aqua; */
+}
+
+.webox:nth-child(2n+1){
+    display: block;
+    position: relative;
+    left: 10%;
+    /* background-color: gray; */
+}
+
+/* .webox:nth-child(2n)::after{
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.webox:nth-child(2n+1)::after{
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    border: 2px solid white;
+    border-radius: 50%;
+} */
+
+.path{
+    width: 0px;
+    border: 2px dotted;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-top: 10%;
+}
+.path i{
+    display: block;
+    position: sticky;
+    top: 10%;
+}
+
+
+/* Project section  */
+
+.portfolio{
+    height: 80vh;
+}
+
+.Heading{
+    margin: 10vh 0px;
+}
+
+.Heading h1{
+    text-align: center;
+    font-size: 2rem;
+    color: lightseagreen;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_details{
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 14px 8px #a1a1a1;
+}
+
+.project_details:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.project_details:nth-child(2n){
+    background-image: url(Img/voice-control.jpg);
+    background-size: cover;
+}
+
+.project_details:nth-child(2n+1){
+    background-image: url(Img/Stock-prediction.jpg);
+    background-size: cover;
+}
+
+/* Footer { pending } */
+
+footer{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(161, 147, 147) 0%, rgba(179,201,241,1) 90% );
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+.Footer_container{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.Footer_container h2,p{
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+.contact{
+    display: flex;
+    width: auto;
+    height: 50%;
+    justify-content: center;
+}
+
+.contact span{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-left: 10px;
+    position: relative;
+    top: 50%;
+}
+
+.Footer_container ul{
+    position: relative;
+    top: 20%;
+}
+
+.footer_desc{
+    border-top: 1px solid black;
+    height: fit-content;
+    padding: 4px;
+}
+
+.footer_desc p{
+    font-size: smaller;
+    text-align: center;
+}
