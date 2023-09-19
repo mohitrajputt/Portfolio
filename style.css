@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0; 
@@ -82,9 +85,9 @@ ul li:hover:after {
     display: block;
     margin: auto;
     width: 200px;
-    height: auto;
+    height: 200px;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px 4px #d5d0d0;
+    box-shadow: 0px 0px 12px 6px #938c8c;
     position: relative;
     top: -100px;
 }
@@ -148,35 +151,43 @@ ul li:hover:after {
 .h5center{
     margin: 0;
     box-sizing: border-box;
-    padding: 12px 0px 0px 25px;
     height: 100%;
-    color: black;
+}
 
+.h5center p{
+    margin: 0px 0px 0px 18px ;
+    text-align: left;
 }
 
 #sa{
-    width: 80%;
+    width: 0%;
     background-color: rgb(3, 252, 231);
+    transition: all 0.5s;
 }
 #sb{
-    width: 70%;
+    width: 0%;
     background-color: yellow;
+    transition: all 0.5s;
 }
 #sc{
-    width: 60%;
+    width: 0%;
     background-color: yellow;
+    transition: all 0.5s;
 }
 #sd{
-    width: 70%;
+    width: 0%;
     background-color: yellow;
+    transition: all 0.5s;
 }
 #se{
-    width: 90%;
+    width: 0%;
     background-color: rgb(3, 252, 231);
+    transition: all 0.5s;
 }
 #sf{
-    width: 55%;
+    width: 0%;
     background-color: red;
+    transition: all 0.5s;
 }
 
 /* work experience  */
