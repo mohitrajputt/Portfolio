@@ -1,4 +1,6 @@
-var skillsContainer = document.getElementsByClassName("containerB")[0];
+alert("Desktop first website")
+
+var skillsContainer = document.getElementsByClassName("skills-container")[0];
 
 window.addEventListener('scroll', checkScroll);
 
@@ -18,21 +20,22 @@ function checkScroll() {
 }
 
 function initskillsprogress() {
-    document.getElementById("sa").style.width = "0%";
-    document.getElementById("sb").style.width = "0%";
-    document.getElementById("sc").style.width = "0%";
-    document.getElementById("sd").style.width = "0%";
-    document.getElementById("se").style.width = "0%";
-    document.getElementById("sf").style.width = "0%";
+    document.getElementById("skills-label-a").style.width = "0%";
+    document.getElementById("skills-label-b").style.width = "0%";
+    document.getElementById("skills-label-c").style.width = "0%";
+    document.getElementById("skills-label-d").style.width = "0%";
+    document.getElementById("skills-label-e").style.width = "0%";
+    document.getElementById("skills-label-f").style.width = "0%";
 
 }
 function skillsprogress() {
-    document.getElementById("sa").style.width = "50%";
-    document.getElementById("sb").style.width = "80%";
-    document.getElementById("sc").style.width = "60%";
-    document.getElementById("sd").style.width = "40%";
-    document.getElementById("se").style.width = "70%";
-    document.getElementById("sf").style.width = "70%";
+    document.getElementById("skills-label-a").style.width = "50%";
+    document.getElementById("skills-label-b").style.width = "80%";
+    document.getElementById("skills-label-c").style.width = "60%";
+    document.getElementById("skills-label-d").style.width = "40%";
+    document.getElementById("skills-label-e").style.width = "70%";
+    document.getElementById("skills-label-f").style.width = "70%";
 
 }
+
 
