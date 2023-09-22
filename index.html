@@ -3,140 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Portfolio || Intern-project-01</title>
+    <title>Portfolio - Mohit Rajput || Software Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d34dfa838c.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.3.0/dist/js/coreui.bundle.min.js" integrity="sha384-Iqk8EE7ao72xAVBuuQTEwrU5N2IdvpJER5ZzM6LxwcXHqj2WstttaOvopXziv0nU" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <!-- Header section contain Navbar || Social links || Name templete -->
     <header>
-            <div class="navbar">
-                <ul>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#reach-skill">Skills</a></li>
-                    <!-- <li><a href="#reach-work_experience">Work experience</a></li> -->
-                    <li><a href="#reach-work_experience">Education</a></li>
-                    <li><a href="#reach-portfolio">Portfolio</a></li>
-                    <li><a href="#reach-contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="user_name">
-                <h1>Mohit Rajput</h1>
-            </div>
-            <div class="social_links">
-                <ul>
+        <!-- This section for navbar -->
+        <div class="navbar">
+            <ul class="center-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#reach-skills">Skills</a></li>
+                <li><a href="#reach-education">Education</a></li>
+                <li><a href="#reach-projects">Projects</a></li>
+                <li><a href="#reach-contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="user-information">
+            <div class="user-name"><h1>Mohit Rajput</h1></div>
+            <div class="social-media">
+                <ul class="center-links">
                     <li><a href="https://www.linkedin.com/in/mohit-rajput-2789a0215"> <i class="fa fa-linkedin"></i> </a></li>
                     <li><a href="https://github.com/mohitrajputt"> <i class="fa fa-github"></i> </a></li>
-                    <li><a href="https://leetcode.com/Dev_Engg/"> <i class="cib-leetcode"></i> </a></li>
+                    <li><a href="https://leetcode.com/Dev_Engg/"> <i class="fa fa-code"></i> </a></li>
+                    <li><a href="https://www.instagram.com/_mohit_rajputt/"> <i class="fa fa-instagram"></i> </a></li>
+                    <li><a href="#"> <i ></i> </a></li>
                 </ul>
             </div>
-    </header>
-
-    <section class="info">
-        <div class="pic">
-            <img src="Img/user_img (2).jpg" alt="/resources/OIP.jpg">
         </div>
-        <div class="desc">
-            <p>"Hello, I'm Mohit Rajput, a passionate developer with a knack for turning lines of code into impactful experiences. My journey in the world of development has allowed me to explore the art of crafting elegant front-end interfaces that captivate users, while also delving into the intricate back-end workings that make those interfaces come to life."
+
+    </header>  
+
+    <!-- User detail setion || User image || About user -->
+    <section class="user-details">
+
+        <div class="user-image"></div>
+
+        <div class="about-user">
+            <p>"Hello, I'm Mohit Rajput, a passionate developer with a knack for turning lines
+                 of code into impactful experiences. My journey in the world of development has 
+                 allowed me to explore the art of crafting elegant front-end interfaces that 
+                 captivate users, while also delving into the intricate back-end workings that
+                  make those interfaces come to life."
             </p>
         </div>
+
     </section>
 
-    <section class="skills" id="reach-skill" >
-        <div class="containerA">
-            <h1>SKILLS</h1>
+    <!-- Skills level section -->
+    <section class="skills" id="reach-skills" >
+
+        <div class="section-heading"><h1>SKILLS</h1></div>
+
+        <div class="skills-container">
+            <div class="skillsbox"> <div class="skills-label" id="skills-label-a" > <p>HTML</p>   </div> </div>
+            <div class="skillsbox"> <div class="skills-label" id="skills-label-b" > <p>CSS</p>    </div></div>
+            <div class="skillsbox"> <div class="skills-label" id="skills-label-c" > <p>Js</p>     </div></div>
+            <div class="skillsbox"> <div class="skills-label" id="skills-label-d" > <p>C</p>      </div></div>
+            <div class="skillsbox"> <div class="skills-label" id="skills-label-e" > <p>C++</p>    </div></div>
+            <div class="skillsbox"> <div class="skills-label" id="skills-label-f" > <p>Python</p> </div></div>
         </div>
-        <div class="containerB">
-            <div class="skillsbox">
-                <h5 class="h5center" id="sa" ><p>HTML</p></h5>
-            </div>
-            <div class="skillsbox">
-                <h5 class="h5center" id="sb" ><p>CSS</p></h5>
-            </div>
-            <div class="skillsbox">
-                <h5 class="h5center" id="sc" ><p>Js</p></h5>
-            </div>
-            <div class="skillsbox">
-                <h5 class="h5center" id="sd" ><p>C</p></h5>
-            </div>
-            <div class="skillsbox">
-                <h5 class="h5center" id="se" ><p>C++</p></h5>
-            </div>
-            <div class="skillsbox">
-                <h5 class="h5center" id="sf" ><p>Python</p></h5>
-            </div>
-        </div>
+
     </section>
 
-    <section class="work_experience " id="reach-work_experience" >
-        <div class="Heading"> <h1>Education</h1></div>
-        <div class="path" >
+    <!-- Education [edu] section [ this section is not responsible yet, updated soon] -->
+    <section class="edu-section" id="reach-education" >
+
+        <div class="section-heading"> <h1>Education</h1></div>
+
+        <div class="path-plane" >
             <i class="fa-solid fa-plane fa-rotate-90 fa-2xl"></i>
         </div>
-        <div class="webox" >
-            <h3 class="float-right" >High School</h3>
-            <p class="float-right" >From SSPR</p>
-            <p class="float-right" >2018</p>
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel minus beatae architecto cupiditate fugit totam alias necessitatibus earum recusandae minima.</p> -->
+
+        <div class="edu-container" >
+            <div class="edu-container-heading">
+                <div class="edu-logo"><i class="fa-solid fa-graduation-cap fa-red fa-2xl" style="color: var(--steel-blue-heading);" ></i></div>
+                <div class="edu-type">
+                    <h4 style="color: var(--steel-blue-heading);" >High School</h4>
+                    <h4 style="color: orange;" >S.S.P.R</h4>
+                    <h4>24-April 2018</h4>
+                </div>
+            </div>
+            <div class="edu-container-info">
+                <p>"I completed my high-school in 2018 from UP BOARD [ from S.S.P.R Agra ]"</p>
+            </div>
         </div>
-        <div class="webox right_container" >
-            <h3 class="float-right" >Intermediate</h3>
-            <p class="float-right" >From SSPR</p>
-            <p class="float-right" >2020</p>
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel minus beatae architecto cupiditate fugit totam alias necessitatibus earum recusandae minima.</p> -->
+
+        <div class="edu-container" >
+            <div class="edu-container-heading">
+                <div class="edu-logo"><i class="fa-solid fa-graduation-cap fa-red fa-2xl" style="color: var(--steel-blue-heading);" ></i></div>
+                <div class="edu-type">
+                    <h4 style="color: var(--steel-blue-heading);" >Intermediate</h4>
+                    <h4 style="color: orange;" >S.S.P.R</h4>
+                    <h4>24-April 2020</h4>
+                </div>
+            </div>
+            <div class="edu-container-info">
+                <p>"I completed my Intermediate in 2020 from UP BOARD [ from S.S.P.R Agra ]"</p>
+            </div>
         </div>
-        <div class="webox" >
-            <h3 class="float-right" >B.tech</h3>
-            <p class="float-right" >From AKTU university</p>
-            <p class="float-right" >2020-24</p>
-            <p>I am computer science final year student.</p>
-        </div>
-        <!-- <div class="webox right_container" >
-            <h3 class="float-right" >B.tech</h3>
-            <p class="float-right" >From AKTU university</p>
-            <p class="float-right" >2020-24</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel minus beatae architecto cupiditate fugit totam alias necessitatibus earum recusandae minima.</p>
-        </div> -->
+
+        <div class="edu-container" >
+            <div class="edu-container-heading">
+                <div class="edu-logo"><i class="fa-solid fa-graduation-cap fa-red fa-2xl" style="color: var(--steel-blue-heading);" ></i></div>
+                <div class="edu-type">
+                    <h4 style="color: var(--steel-blue-heading);" >B.tech</h4>
+                    <h4 style="color: orange;" >R.B.S.E.T.C</h4>
+                    <h4>2020-24</h4>
+                </div>
+            </div>
+            <div class="edu-container-info">
+                <p>"I'm final year computer science student."</p>
+            </div>
+        </div> 
+
     </section>
 
-    <section class="portfolio" id="reach-portfolio" >
-        <div class="Heading"><h1>PORTFOLIO</h1></div>
-        <div class="projects">
-            <div class="project_details"></div>
-            <div class="project_details"></div>
-            <div class="project_details"></div>
+    <section class="project-section" id="reach-projects">
+
+        <div class="section-heading"> <h1>Projects</h1> </div>
+
+        <div class="projects-container">
+            <div class="project Spotify-clone"></div>
+            <div class="project ping-pong-game"></div>
+            <div class="project Project-collaboration-platform"></div>
         </div>
+
     </section>
 
     <footer id="reach-contact" >
-        <div class="footer_content">
-            <div class="Footer_container">
-                <h2>Intern Project 01</h2>
-                <p>A Portfolio Website</p>
-            </div>
-            <div class="Footer_container">
-                <p>I am looking for job as SDE or Full Stack developer</p>
-                <div class="contact" >
-                    <span><a href="C V.pdf">Download CV</a></span>
-                    <span><a href="#">Hire me</a></span>
-                </div>
-            </div>
-            <div class="Footer_container">
-                <p>FOLLOW</p>
-                <ul>
-                    <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                    <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                    <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                    <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer_desc">
-            <p>@2023 &nbsp; All Rights Reserved &nbsp;&nbsp;&nbsp; PRIVACY POLICY TERMS AND CONDITIONS</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
 
+        <div class="section-heading margin-zero"> <h1>Contact </h1></div>
+
+        <div class="get-in-touch">
+            <div class="send-msg">
+                    <input type="text" name="user-name" id="user-name" placeholder="User-Name">
+                    <input type="text" name="user-email" id="user-email" placeholder="User-Email">
+                    <input type="text" name="Message" id="Message" placeholder="Drop Message">
+                <button type="submit" class="send-msg-button">Send</button>
+            </div>
+            <div class="contact-details">
+                <h2>Get in touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Sed minima at vel doloribus consequuntur delectus eos </p>
+                <p>dolore ipsa, praesentium voluptates.</p>
+                <h2>My Address</h2>
+                <p><i class="fa fa-location" ></i>UP, India</p>
+                <p><i class="fa fa-mobile" ></i>+91 9997656397</p>
+                <p><i class="fa fa-mail" ></i>999MOHITRAJPUT@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="social-media for-footer">
+            <ul class="center-links">
+                <li><a href="https://www.linkedin.com/in/mohit-rajput-2789a0215"> <i class="fa fa-linkedin"></i> </a></li>
+                <li><a href="https://github.com/mohitrajputt"> <i class="fa fa-github"></i> </a></li>
+                <li><a href="https://leetcode.com/Dev_Engg/"> <i class="fa fa-code"></i> </a></li>
+                <li><a href="https://www.instagram.com/_mohit_rajputt/"> <i class="fa fa-instagram"></i> </a></li>
+                <li><a href="#"> <i ></i> </a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
