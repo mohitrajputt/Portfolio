@@ -1,17 +1,20 @@
-html{
-    scroll-behavior: smooth;
-}
+/* css for body */
+
 body{
+    padding: 0;
     margin: 0;
-    padding: 0; 
-    background-color: #d5d0d0;
 }
 
-section:nth-child(2n){
-    background-color: white;
+/* Variables for color selection */
+
+:root {
+    --steel-blue-heading: #13044f;
+    --blue-voilet-bg: #abb8c3;
 }
 
-/* CSS for phase 1  */
+/* css for header section  */
+
+/* style structor and apply background { radial-gradient }  */
 
 header{
     width: 100%;
@@ -19,20 +22,24 @@ header{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,156,156,1) 0%, rgba(179,201,241,1) 90% );
 }
 
-ul{
+/* style navbar */
+
+
+/* nav links */
+
+.center-links{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 16px 0px 4px 0px;
     margin: 0;
+}
+
+.navbar li{
+    margin: 22px 6px;
 }
 
 ul li{
     list-style: none;
-    box-sizing: border-box;
-    padding: 6px 12px;
-    margin: 4px 0px;
 }
 
 ul a{
@@ -41,11 +48,13 @@ ul a{
     text-transform: uppercase;
 }
 
+/* bottom border effect for navbar */
+
 ul li:after {
 	content: '';
 	display: block;
 	margin: auto;
-	height: 3px;
+	height: 1.5px;
 	width: 0px;
 	background: transparent;
 	transition: width .5s ease, background-color .5s ease;
@@ -53,65 +62,130 @@ ul li:after {
 
 ul li:hover:after {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
 }
 
-.user_name{
-    margin-top: 60px;
+/* user name templte { center } */
+
+.user-name h1{
+    font-size: 3rem;
+    margin: 72px 0px 18px 0px;
     text-align: center;
-    font-size: 2rem;
 }
 
-.social_links{
-    position: relative;
-    top: -40px;
+.social-media li{
+    margin: 0px 12px;
 }
 
-/* css for phase 2  */
+/* End of Phase one css  */
 
-.info{
-    padding-bottom: 8%;
-}
+/* user detail section include user image and about description  */
 
-.pic{
-    display: block;
+.user-details{
     width: 100%;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
+    height: 40vh;
 }
 
-.pic img{
-    display: block;
+.user-image{
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    box-shadow: 0px 0px 12px 6px #938c8c;
+    box-shadow: 0px 0px 3px 5px #fff;
     position: relative;
     top: -100px;
+    background-image: url(img/user-image.jpg);
+    background-size: contain;
 }
 
-.desc{
-    padding: 0px 200px;
+.about-user{
+    width: 70vw;
+    margin: auto;
+    position: relative;
+    top: -50px;
 }
 
-@media screen and (max-width: 600px) {
-    .desc{
+.about-user p{
+    font-size: larger;
+    line-height: 7mm;
+    text-align: center;
+}
+
+/* @media screen and (max-width: 600px) {
+    .about-user{
         padding: 0;
         overflow: scroll;
     }
-}
+} */
 
-.desc p{
-    font-size: larger;
-    line-height: 8mm;
-}
+/* End of phase two css */
 
-/* css for phase 3 [ Skills ]  */
+/* Skills section */
 
 .skills{
+    background-color: #d5d0d0;
     height: 60vh;
+}
+
+.section-heading h1{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--steel-blue-heading);
+    padding: 32px 0px;
+}
+
+.skills-container{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skillsbox{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 26px 32px;
+    overflow: hidden;
+    background-color: rgb(241, 236, 236);
+    box-shadow: 2px 0px 9px 0px rgb(199, 198, 198);
+}
+
+.skills-label{
+    margin: 0;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.skills-label p{
+    margin: 0px 0px 0px 18px ;
+    text-align: left;
+    position: relative;
+    top: 12px;
+    font-weight: bold;
+}
+
+/* skills level bar */
+
+#skills-label-a{
+    width: 0%;
+    background-color: rgb(3, 252, 231);
+}
+#skills-label-b{
+    background-color: yellow;
+}
+#skills-label-c{
+    background-color: yellow;
+}
+#skills-label-d{
+    background-color: yellow;
+}
+#skills-label-e{
+    background-color: rgb(3, 252, 231);
+}
+#skills-label-f{
+    background-color: red;
 }
 
 @media screen and (max-width: 800px) {
@@ -120,251 +194,228 @@ ul li:hover:after {
     }
 }
 
-.containerA{
-    margin: 10vh 0px;
+/* End of Phase 3 */
+
+.edu-section{
+    /* temp  */
+    padding-bottom: 50px;
+    height: auto;
 }
 
-.containerA h1{
-    text-align: center;
-    font-size: 2rem;
-    color: lightseagreen;
+.path-plane{
+    width: 0px;
+    border: 2px dotted;
+    height: 434px;
+    position: absolute;
+    left: 50%;
+    z-index: -3;
+    margin-top: 10%;
+}
+.path-plane i{
+    display: block;
+    position: sticky;
+    top: 40%;
+    z-index: 10;
 }
 
-.containerB{
+.edu-container{
+    width: 350px;
+    height: 230px;
+    box-sizing: border-box;
+    padding: 8px 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+}
+
+.edu-container-heading{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0px 100px;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
 }
 
-.skillsbox{
-    width: 180px;
-    height: 40px;
-    border-radius: 30px;
-    box-sizing: border-box;
-    margin: 30px 60px;
-    overflow: hidden;
-    background-color: rgb(241, 236, 236);
-    box-shadow: 2px 0px 9px 0px rgb(199, 198, 198);
+.edu-logo{
+    position: relative;
+    top: 18px;
+    left: 8px;
 }
 
-.h5center{
-    margin: 0;
-    box-sizing: border-box;
-    height: 100%;
-}
-
-.h5center p{
-    margin: 0px 0px 0px 18px ;
-    text-align: left;
-}
-
-#sa{
-    width: 0%;
-    background-color: rgb(3, 252, 231);
-    transition: all 0.5s;
-}
-#sb{
-    width: 0%;
-    background-color: yellow;
-    transition: all 0.5s;
-}
-#sc{
-    width: 0%;
-    background-color: yellow;
-    transition: all 0.5s;
-}
-#sd{
-    width: 0%;
-    background-color: yellow;
-    transition: all 0.5s;
-}
-#se{
-    width: 0%;
-    background-color: rgb(3, 252, 231);
-    transition: all 0.5s;
-}
-#sf{
-    width: 0%;
-    background-color: red;
-    transition: all 0.5s;
-}
-
-/* work experience  */
-
-.work_experience{
-    box-sizing: border-box;
-    padding: 8px;
-}
-
-.webox{
-    width: 400px;
-    height: 250px;
-    margin: 30px 0px;
-    box-sizing: border-box;
-    padding: 2px 14px;
-    box-shadow: 0px 0px 8px 6px rgb(241, 237, 237);
-}
-
-.float-right{
+.edu-container-heading h4{
+    margin: 6px;
     text-align: right;
 }
 
-/* .right_container{
-    display: block;
-    position: relative;
-    left: 60%;
-    background-color: aqua;
-} */
-
-.webox:nth-child(2n){
-    display: block;
-    position: relative;
-    left: 60%;
-    /* background-color: aqua; */
+.edu-container-info p{
+    text-align: center;
 }
 
-.webox:nth-child(2n+1){
+/* css to left right align container */
+.edu-container:nth-child(2n){
+    display: block;
+    position: relative;
+    left: 60%;
+}
+
+.edu-container:nth-child(2n+1){
     display: block;
     position: relative;
     left: 10%;
-    /* background-color: gray; */
 }
 
-/* .webox:nth-child(2n)::after{
+/* path stop mark */
+/* .edu-container:nth-child(2n)::after{
     content: '';
-    width: 0.5rem;
-    height: 0.5rem;
-    position: absolute;
-    top: 25%;
-    left: 0%;
-    border: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    background-color: #94999d;
     border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    z-index: -1;
 }
 
-.webox:nth-child(2n+1)::after{
+.edu-container:nth-child(2n+1)::after{
     content: '';
-    width: 0.5rem;
-    height: 0.5rem;
-    position: absolute;
-    top: 25%;
-    left: 0%;
-    border: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    background-color: #94999d;
     border-radius: 50%;
-} */
-
-.path{
-    width: 0px;
-    border: 2px dotted;
-    height: 500px;
     position: absolute;
-    left: 50%;
-    margin-top: 10%;
-}
-.path i{
-    display: block;
-    position: sticky;
-    top: 10%;
-}
+    top: 50%;
+    right: -56.5%;
+    z-index: -1;
+}  */
 
+/* end of education section */
 
-/* Project section  */
+/* Project section */
 
-.portfolio{
+.project-section{
+    width: 100%;
     height: 80vh;
+    background-color: #d5d0d0;
 }
 
-.Heading{
-    margin: 10vh 0px;
-}
-
-.Heading h1{
-    text-align: center;
-    font-size: 2rem;
-    color: lightseagreen;
-}
-
-.projects{
+.projects-container{
+    width: 80%;
+    height: 70%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.project_details{
-    margin: 30px;
-    width: 300px;
-    height: 300px;
-    box-shadow: 0px 0px 14px 8px #a1a1a1;
+.project{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px 6px #b4b8bb;
 }
 
-.project_details:hover{
-    opacity: 0.7;
+.Spotify-clone{
+    background-image: url(img/project-1.png);
+    background-size: cover;
+}
+
+.Spotify-clone:hover{
+    opacity: 0.4;
     cursor: pointer;
 }
 
-.project_details:nth-child(2n){
-    background-image: url(Img/voice-control.jpg);
+.Spotify-clone::after{
+    content: "Spotify clone";
+    position: relative;
+    bottom:  -110%;
+    left: 28%;
+    color: black;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+.ping-pong-game{
+    background-image: url(img/project-2.jpg);
     background-size: cover;
 }
 
-.project_details:nth-child(2n+1){
-    background-image: url(Img/Stock-prediction.jpg);
+.ping-pong-game:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.ping-pong-game::after{
+    content: "Ping-pong game";
+    position: relative;
+    bottom:  -110%;
+    left: 28%;
+    color: black;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+.Project-collaboration-platform{
+    background-image: url(img/project-3.jpg);
     background-size: cover;
 }
 
-/* Footer { pending } */
+.Project-collaboration-platform:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.Project-collaboration-platform::after{
+    content: "Project collaboration platform";
+    position: relative;
+    bottom:  -110%;
+    color: black;
+    text-decoration: solid;
+    font-size: larger;
+}
+
+/* End of project section */
 
 footer{
+    margin: 0;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(161, 147, 147) 0%, rgba(179,201,241,1) 90% );
 }
 
-.footer_content{
+.get-in-touch{
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
-    height: 50vh;
 }
 
-.Footer_container{
-    width: 100%;
+.send-msg{
+    width: 50%;
+}
+
+.send-msg input{
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 22px 0px;
     box-sizing: border-box;
-    padding-top: 100px;
+    padding: 6px;
+    background-color: transparent;
 }
 
-.Footer_container h2,p{
-    text-align: center;
-    position: relative;
-    top: 25%;
+.send-msg-button{
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    background-color: transparent;
 }
 
-.contact{
-    display: flex;
-    width: auto;
-    height: 50%;
-    justify-content: center;
+.contact-details p{
+    margin: 4px;
 }
 
-.contact span{
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 8px;
-    margin-left: 10px;
-    position: relative;
-    top: 50%;
+.for-footer{
+    padding: 62px 0px 24px 0px;
 }
 
-.Footer_container ul{
-    position: relative;
-    top: 20%;
-}
-
-.footer_desc{
-    border-top: 1px solid black;
-    height: fit-content;
-    padding: 4px;
-}
-
-.footer_desc p{
-    font-size: smaller;
-    text-align: center;
+.margin-zero h1{
+    margin: 0;
 }
