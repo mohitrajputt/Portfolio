@@ -86,6 +86,12 @@ ul li:hover:after {
     height: 40vh;
 }
 
+@media screen and (max-width: 600px) {
+    .user-details{
+        height: auto;
+    }
+}
+
 .user-image{
     margin: auto;
     width: 180px;
