@@ -1,4 +1,4 @@
-alert("Desktop first website")
+// alert("Desktop first website")
 
 var skillsContainer = document.getElementsByClassName("skills-container")[0];
 
