@@ -277,8 +277,9 @@ ul li:hover:after {
 
 @media screen and (max-width: 1050px) {
     .edu-container:nth-child(n){
-        left: 25%;
+        left: 20%;
         margin-bottom: 34px;
+        width: 70%;
     }
 }
 
@@ -406,11 +407,19 @@ footer{
     width: 80%;
     margin: auto;
     display: flex;
+	flex-wrap: wrap;
 }
 
 .send-msg{
     width: 50%;
 }
+
+@media screen and (max-width: 800px) {
+    .send-msg{
+        width: 100%;
+    }
+}
+
 
 .send-msg input{
     display: block;
