@@ -329,6 +329,9 @@ section {
     .skillTotal{
         height: 12px;
     }
+    .box:nth-child(n + 5) {
+        display: none;
+    }
 }
 
 
@@ -511,6 +514,13 @@ section {
 .form button {
     height: 50px;
     font-weight: 900px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.form button:hover{
+    background-color: var(--primary);
+    color: black;
 }
 
 .connectInfoBox {
@@ -603,37 +613,10 @@ section {
     pointer-events: none;
 }
 
-/* Footer */
 
-footer {
-    border-top: 1px solid rgba(252, 252, 252, 0.1);
-    display: flex;
-    justify-content: space-between;
-    margin-top: 14px;
-    position: relative;
-    height: 50px;
-    line-height: 50px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: small;
-    padding: 0 12px;
-}
-
-footer div span {
-    font-size: 1rem;
-    margin: 0 6px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: var(--primary);
-}
 
 /* Footer for mobile view */
-
+/* 
 .mobileFooter {
     display: none;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -668,6 +651,8 @@ a:hover {
 .mobileFooter i {
     color: rgba(255, 255, 255, 0.8);
 }
+
+*/
 
 @media screen and (max-width: 700px) {
     section{

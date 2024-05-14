@@ -46,3 +46,31 @@ a.navLinkActive {
   border-radius: 1px;
 }
 
+/* Footer */
+
+footer {
+  border-top: 1px solid rgba(252, 252, 252, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+  padding: 0 12px;
+}
+
+footer div span {
+  font-size: 1rem;
+  margin: 0 6px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: var(--primary);
+}

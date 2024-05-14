@@ -2,6 +2,8 @@ import styles from "./Main.module.css";
 import {skills} from "../../data/SkillsData";
 import { useState } from "react";
 import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+
 
 function Main() {
     const formatDate = () => {
@@ -18,20 +20,19 @@ function Main() {
         e.preventDefault();
         try {
             await emailjs.sendForm('service_so2k9ab', 'template_7uo8c12', e.target, 'eBFV8FnMxljhlNAiH');
-            alert('Message sent successfully!');
-            // Clear form fields
+            toast.success("Message sent successfully!");
             setName('');
             setEmail('');
             setMessage('');
         } catch (error) {
             console.error('Error sending email:', error);
-            alert('Failed to send message. Please try again later.');
+            toast.error("Failed to send message. Please try again later.");
         }
     };
 
     return (
         <>
-            <section className={styles.introSection} >
+            <section className={styles.introSection} id="scrolltop" >
                 <div className={styles.userImage} ></div>
                 <div className={styles.quickDetails} >
                     <div className={styles.quickLink} >
@@ -142,7 +143,7 @@ function Main() {
             </div>
         </section>
 
-        <section className={styles.connect} >
+        <section className={styles.connect} id="contactSection" >
             <div className={styles.connectHeader} >
                 <div>Contact</div>
             </div>
@@ -187,7 +188,7 @@ function Main() {
         <footer>
             <div >Developed by Mohit Rajput</div>
             <div>
-                <a href="#home" >Scroll To Top <span>&#8673;</span></a>
+                <a href="#scrolltop" >Scroll To Top <span>&#8673;</span></a>
             </div>
         </footer> 
         </>

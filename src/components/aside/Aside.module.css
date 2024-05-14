@@ -9,9 +9,6 @@ aside {
     width: 9.5vw;
     height: 85vh;
     padding: 18px;
-    /* backdrop-filter: blur(15.0014px);
-    background: linear-gradient(rgba(0, 163, 255, 0.06) 100%, rgba(0, 163, 255, 0.5) 0%);
-    border: .75px solid rgb(252 252 252 / 5%); */
     backdrop-filter: blur(0px);
     background: var(--gradient7);
     border: .75px solid rgba(252, 252, 252, .05);
@@ -51,7 +48,7 @@ aside {
     color: #66ccff;
 }
 
-.asideContainer ul li:nth-child(1) i::after{
+.asideContainer ul li i::after{
     width: 70px;
     height: 20px;
     line-height: 20px;
@@ -68,7 +65,24 @@ aside {
     font-size: 0.5rem;
 }
 
-.asideContainer ul li:nth-child(1) i:hover::after{
+.asideContainer ul li:nth-child(1) i::after{
+    content: "Hire Me";
+}
+
+.asideContainer ul li:nth-child(2) i::after{
+    content: "Contact me";
+}
+
+.asideContainer ul li:nth-child(3) i::after{
+    content: "Under construction";
+    width: 120px;
+}
+
+.asideContainer ul li:nth-child(n + 4) i::after{
+    visibility: hidden;
+}
+
+.asideContainer ul li i:hover::after{
     opacity: 1; 
 }
 

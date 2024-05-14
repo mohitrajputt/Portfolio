@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 nav {
     width: auto;
     height: 75px;
@@ -62,10 +64,89 @@ nav {
 
 .menu {
     display: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.menuContainer input {
+    display: none;
+}
+
+.menuContainer label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    cursor: pointer;
+}
+
+.menuList, .menuButtons ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menuList li{
+    width: 40px;
+    background-color: gray;
+    height: 4px;
+    margin: 6px 0;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuList li:nth-child(3) {
+    width: 25px;
+}
+
+/* rotate on click */
+
+.inputMenu[type="checkbox"]:checked ~ ul li:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.inputMenu[type="checkbox"]:checked ~ ul li:nth-child(2) {
+    visibility: hidden;
+    transition: none;
+}
+.inputMenu[type="checkbox"]:checked ~ ul li:nth-child(3) {
+    width: 40px;
+    transform: translateY(-13px) rotate(-45deg);
 }
 
 .menu img{
     width: 45px;
+}
+
+/* mobile menu */
+
+.menuButtons{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.menuButtons ul li{
+    height: 32px;
+    margin: 12px 0;
+}
+
+.menuButtons ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 .renderContent {
@@ -82,7 +163,7 @@ nav {
         display: none;
     }
     .menu {
-        display: block;
+        display: flex;
     }
     nav{
         backdrop-filter: blur(0px);
@@ -90,6 +171,8 @@ nav {
     }
     .renderContent {
         top: 75px;
+        position: unset;
+        overflow: unset;
         left: 0;
         width: 100%;
     }

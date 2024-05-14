@@ -3,7 +3,8 @@ import Main from "./components/main/Main";
 import Resume from "./components/resume/Resume";
 import Projects from "./components/projects/Projects";
 import Nav from "./components/nav/Nav";
-import Aside from "./components/aside/Aside";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
     {
       path: '/', element: <Nav />, children: [
         {
-          index: true, element: <Main/>
+          index: true, element: <Main />
         },
         {
           path: 'resume', element: <Resume />
@@ -25,10 +26,19 @@ function App() {
 
   return (
     <>
-      <>
-        <RouterProvider router={router} />
-      </>
-      <Aside />
+      <RouterProvider router={router} />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 }
