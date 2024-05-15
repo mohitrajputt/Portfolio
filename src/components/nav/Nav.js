@@ -49,7 +49,7 @@ function Nav() {
                     <div className={styles.menu} >
                         <div className={styles.menuContainer} >
                             <label htmlFor="menu"  ></label>
-                            <input type="checkbox" id="menu" className={styles.inputMenu} onChange={handleMenuStatus} checked={isChecked}  />
+                            <input type="checkbox" id="menu" className={styles.inputMenu} onChange={handleMenuStatus} checked={isChecked} />
                             <ul className={styles.menuList} >
                                 <li></li>
                                 <li></li>
@@ -59,21 +59,41 @@ function Nav() {
                     </div>
                 </div>
             </nav>
-            {menuStatus && 
-            <div className={styles.menuButtons} >
-                <ul>
-                    <li><NavLink to="/" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Home</NavLink></li>
-                    <li><NavLink to="projects" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus}>Projects</NavLink></li>
-                    <li><NavLink to="resume" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Resume</NavLink></li>
-                    {/* <li><NavLink to="coding" className={({ isActive }) => isActive ? "navLinkActive" : ""} >Coding Profile</NavLink></li> */}
-                    {/* <li><NavLink to="" className={({ isActive }) => isActive ? "navLinkActive" : ""} >Contact</NavLink></li> */}
-                </ul>
-            </div>
+            {menuStatus &&
+                <div className={styles.menuButtons} >
+                    <ul>
+                        <li><NavLink to="/" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Home</NavLink></li>
+                        <li><NavLink to="projects" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus}>Projects</NavLink></li>
+                        <li><NavLink to="resume" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Resume</NavLink></li>
+                        {/* <li><NavLink to="coding" className={({ isActive }) => isActive ? "navLinkActive" : ""} >Coding Profile</NavLink></li> */}
+                        {/* <li><NavLink to="" className={({ isActive }) => isActive ? "navLinkActive" : ""} >Contact</NavLink></li> */}
+                    </ul>
+                </div>
             }
             <div className={styles.renderContent} id="main" >
                 <Outlet />
+            <section className={styles.mobileFooter} >
+                <p>Developed by Mohit Rajput</p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mohit-rajput-2789a0215" target="_blank" rel="noopener noreferrer" >
+                            <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mohitrajputt" target="_blank" rel="noopener noreferrer" >
+                            <i className="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_mohit_rajputt?igsh=d3ZyNWl6MTQ5Z3Nr" target="_blank" rel="noopener noreferrer" >
+                            <i className="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
             </div>
-            <Aside/>
+            <Aside />
         </>
     )
 }

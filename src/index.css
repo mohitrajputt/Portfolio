@@ -61,6 +61,12 @@ footer {
   padding: 0 12px;
 }
 
+@media screen and (max-width: 700px) {
+  footer{
+    display: none;
+  }
+}
+
 footer div span {
   font-size: 1rem;
   margin: 0 6px;
@@ -74,3 +80,4 @@ footer a {
 a:hover {
   color: var(--primary);
 }
+

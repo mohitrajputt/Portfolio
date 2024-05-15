@@ -269,6 +269,20 @@ section {
     border: .75px solid rgb(252 252 252 / 5%);
     background: var(--gradient8);
     backdrop-filter: blur(30px);
+    position: relative;
+}
+
+.extend{
+    display: none;
+}
+
+.extendLabel {
+    display: none;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .box{
@@ -320,6 +334,7 @@ section {
 @media screen and (max-width: 700px) {
     .skillContent {
         grid-template-columns: repeat(1, 1fr);
+        padding: 22px 22px 82px 22px;
     }
     .skillIcon {
         background-color: white;
@@ -329,8 +344,14 @@ section {
     .skillTotal{
         height: 12px;
     }
-    .box:nth-child(n + 5) {
+    .extendLabel{
+        display: block;
+    }
+    .box:nth-child(n + 7) {
         display: none;
+    }
+    .extend[type="checkbox"]:checked ~ .box {
+        display: block;
     }
 }
 
@@ -584,6 +605,9 @@ section {
     text-align: center;
     line-height: 50px;
 }
+.addressIcon i{
+    color: var(--primary);
+}
 
 .addressinfo {
     background: var(--gradient9);
@@ -612,47 +636,6 @@ section {
     border-radius: inherit;
     pointer-events: none;
 }
-
-
-
-/* Footer for mobile view */
-/* 
-.mobileFooter {
-    display: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-@media screen and (max-width: 700px) {
-    .mobileFooter {
-        display: block;
-    }
-
-    footer div:nth-child(1) {
-        visibility: hidden;
-    }
-}
-
-.mobileFooter ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.8rem;
-}
-
-.mobileFooter p {
-    text-align: center;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.5);
-    margin: 32px 0;
-    font-weight: 300;
-}
-
-.mobileFooter i {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-*/
 
 @media screen and (max-width: 700px) {
     section{

@@ -5,12 +5,13 @@ import Projects from "./components/projects/Projects";
 import Nav from "./components/nav/Nav";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NotFound from "./components/NotFound";
 
 function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/', element: <Nav />, children: [
+      path: '/', element: <Nav />, errorElement: <NotFound/> , children: [
         {
           index: true, element: <Main />
         },

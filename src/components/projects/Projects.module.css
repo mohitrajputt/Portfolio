@@ -85,7 +85,7 @@
     font-size: 1.2rem;
 }
 
-.projectLinks div a:hover{
+.projectLinks div a:hover, .projectLinks div i{
     color: var(--primary);
 }
 

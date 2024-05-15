@@ -16,6 +16,8 @@ function Main() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const [checked, setChecked] = useState(false);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -46,7 +48,7 @@ function Main() {
                         </div>
                         <div className={styles.contactMe} >
                             <p>
-                                <a href="#contact" >Contact Me</a>
+                                <a href="#contactSection" >Contact Me</a>
                                 <span>&#8599;</span>
                             </p>
                         </div>
@@ -75,6 +77,13 @@ function Main() {
                     </div> 
                 </div>
                 <div className={styles.skillContent} >
+                    <label className={styles.extendLabel} htmlFor="extend" onClick={() => setChecked(!checked)} >
+                        {checked ?
+                        <i className="fa-solid fa-angles-up"></i> :
+                        <i className="fa-solid fa-angles-down"></i>
+                        }
+                    </label>
+                    <input type="checkbox" className={styles.extend} id="extend" />
                     {skills.map((skill, index) => (
                         <div className={styles.box} key={index} >
                             <div className={styles.aboutSkills} >
@@ -115,8 +124,8 @@ function Main() {
                             <img src="https://seeklogo.com/images/B/board-of-high-school-intermediate-uttar-pradesh-logo-C72295BBDE-seeklogo.com.png" width="80px" alt="add-link" />
                         </div>
                         <div className={styles.eduInfo} >
-                            <p>2017-2020</p>
-                            <h3>9th-12th From SSPR</h3>
+                            <p>2016-2020</p>
+                            <h3>09-12th From UP Board</h3>
                             <p>Physics, Chemistry & Math</p>
                         </div>
                     </div>
