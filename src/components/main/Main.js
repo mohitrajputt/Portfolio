@@ -1,5 +1,6 @@
 import styles from "./Main.module.css";
 import {skills} from "../../data/SkillsData";
+import {projects} from "../../data/ProjectData";
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
@@ -69,6 +70,23 @@ function Main() {
                     </div>
                 </div>
             </section>
+
+            {/* <section className={styles.skillSection} >
+                <div className={styles.skillHeader} >
+                    <div className={styles.headerContent} >
+                        <p>Projects  </p>
+                    </div> 
+                </div>
+                <div className={styles.skillContent} >
+                    {projects.map((project, index) => (
+                        <div id="index" className={styles.projectDetails} key={index} >
+                            <i className="fa-solid fa-bolt"></i>
+                            <h1>{project.title}</h1>
+                            <p>{project.brief}</p>
+                        </div>
+                    ))}
+                </div>
+            </section> */}
 
             <section className={styles.skillSection} >
                 <div className={styles.skillHeader} >

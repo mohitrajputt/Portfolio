@@ -11,7 +11,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/', element: <Nav />, errorElement: <NotFound/> , children: [
+      path: 'portfolio/', element: <Nav />, errorElement: <NotFound/> , children: [
         {
           index: true, element: <Main />
         },

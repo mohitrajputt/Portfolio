@@ -231,6 +231,33 @@ section {
     }
 }
 
+/*  */
+
+.projectDetails {
+    text-align: center;
+    padding: 22px;
+    position: relative;
+    background: var(--gradient11);
+    border: .75px solid rgb(252 252 252 / 5%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.projectDetails i {
+    background: var(--gradient2);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    font-size: 32px;
+    color: var(--primary);
+    z-index: 10;
+    filter: blur(.5px);
+}
+
+
 
 /* Style for Skill Component  */
 

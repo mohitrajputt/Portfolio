@@ -28,7 +28,7 @@ function Nav() {
                 <div className={styles.navButtons} >
                     <ul className={styles.navList} >
                         <li>
-                            <NavLink to="/" className={({ isActive }) => isActive ? "navLinkActive" : ""} >
+                            <NavLink to="/portfolio" end className={({ isActive }) => isActive ? "navLinkActive" : ""} >
                                 <img src={homeIcon} alt="add-link" />
                                 <span>Home</span>
                             </NavLink>
