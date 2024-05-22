@@ -10,9 +10,9 @@ I am a MERN stack and software developer passionate about creating innovative an
 
 Here are some of the skills and technologies I'm proficient in:
 
-- **Frontend**: HTML, CSS, JavaScript, jQuery, React, Redux
+- **Frontend**: React.js, HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js
-- **Databases**: MongoDB, Firebase
+- **Databases**: MongoDB, FireStore
 - **Version Control**: Git, GitHub
 - **Other**: RESTful APIs, Responsive Web Design, Vscode
 
