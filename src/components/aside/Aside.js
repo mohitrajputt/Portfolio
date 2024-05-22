@@ -19,7 +19,7 @@ function Aside() {
                     <li>
                         {location.pathname === '/' ?
                         <a href="#contactSection" ><i className="fa-solid fa-circle-nodes"></i></a> :
-                        <Link to="/portfolio" ><i className="fa-solid fa-home"></i></Link> 
+                        <Link to="/Portfolio" ><i className="fa-solid fa-home"></i></Link> 
                         }
                     </li>
                     {/* for coding process */}

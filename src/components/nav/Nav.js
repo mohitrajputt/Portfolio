@@ -28,7 +28,7 @@ function Nav() {
                 <div className={styles.navButtons} >
                     <ul className={styles.navList} >
                         <li>
-                            <NavLink to="/portfolio" end className={({ isActive }) => isActive ? "navLinkActive" : ""} >
+                            <NavLink to="/Portfolio" end className={({ isActive }) => isActive ? "navLinkActive" : ""} >
                                 <img src={homeIcon} alt="add-link" />
                                 <span>Home</span>
                             </NavLink>
@@ -62,7 +62,7 @@ function Nav() {
             {menuStatus &&
                 <div className={styles.menuButtons} >
                     <ul>
-                        <li><NavLink to="/" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Home</NavLink></li>
+                        <li><NavLink to="/Portfolio" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Home</NavLink></li>
                         <li><NavLink to="projects" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus}>Projects</NavLink></li>
                         <li><NavLink to="resume" className={({ isActive }) => isActive ? "navLinkActive" : ""} onClick={handleMenuStatus} >Resume</NavLink></li>
                         {/* <li><NavLink to="coding" className={({ isActive }) => isActive ? "navLinkActive" : ""} >Coding Profile</NavLink></li> */}
