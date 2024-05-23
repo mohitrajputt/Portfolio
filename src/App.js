@@ -11,7 +11,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: 'Portfolio/', element: <Nav />, errorElement: <NotFound/> , children: [
+      path: 'Portfolio', element: <Nav />, errorElement: <NotFound/> , children: [
         {
           index: true, element: <Main />
         },
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} basename="/Portfolio"  />
+      <RouterProvider router={router} basename="Portfolio"  />
       <ToastContainer
         position="top-right"
         autoClose={3000}
