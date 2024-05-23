@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/d34dfa838c.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            background-color: #040404;
+            overflow: hidden;
+        }
         .errorPage {
             width: 100vw;
             height: 100vh;
@@ -32,7 +37,7 @@
             line-height: 140px;
             text-align: center;
             background-size: cover;
-            color: var(--primary);
+            color: #00aaff;
         }
 
         .errorEmote::before {
@@ -45,7 +50,7 @@
             transform: scale(2.4);
             border-radius: 50%;
             /* background-color: #f2f5f8; */
-            background: var(--gradient11);
+            background: linear-gradient(180deg, rgba(0, 163, 255, 0.05) 0%, rgba(0, 163, 255, 0.02) 100%);
             z-index: -1;
         }
 
@@ -87,7 +92,7 @@
             font-weight: 700;
             border-radius: 40px;
             text-decoration: none;
-            color: var(--primary);
+            color: #00aaff;
         }
 
         @media screen and (max-width: 900px) {
@@ -111,17 +116,17 @@
 </head>
 
 <body>
-    <div className={styles.errorPage}>
-        <div className={styles.errorContainer}>
-            <div className={styles.errorEmote}>
-                <i className="fa-solid fa-face-frown"></i>
+    <div class="errorPage">
+        <div class="errorContainer">
+            <div class="errorEmote">
+                <i class="fa-solid fa-face-frown"></i>
             </div>
-            <div className={styles.errorContent}>
+            <div class="errorContent">
                 <h1>404</h1>
                 <h2>OOPS! PAGE NOT BE FOUND</h2>
                 <p>Sorry but the page you are looking for does not exist, have been removed. name changed or is
                     temporarily unavailable</p>
-                <Link to="portfolio">Back to homepage</Link>
+                <a href="Portfolio">Back to homepage</a>
             </div>
         </div>
     </div>
