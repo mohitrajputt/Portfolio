@@ -188,6 +188,9 @@ nav {
     scroll-behavior: smooth;
     width: 3px;
 }
+.renderContent:hover::-webkit-scrollbar {
+    width: 6px;
+}
 
 .renderContent::-webkit-scrollbar-track {
     background-color: transparent;

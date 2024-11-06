@@ -158,12 +158,28 @@ function Main() {
                     </div>
                     <div className={styles.eduContentContainer} >
                         <div className={styles.eduLogo} >
-                            <img src="https://media.licdn.com/dms/image/D560BAQFcNG2twN7e4Q/company-logo_200_200/0/1710027820835?e=1723680000&v=beta&t=6dCbTKTYUXEpdzabSrXNzF0rcr2zpglRElpOST9XvN0" width="80px" alt="add-link" />
+                            <img src="https://dabotics.com/img/logo.svg" width="80px" alt="add-link" />
                         </div>
                         <div className={styles.eduInfo} >
                             <p>July-Aug 2023</p>
                             <h3>Dabotics PVT LTD</h3>
                             <p>Web Developer Intern</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.eduContent} >
+                    <div className={styles.trackPath} >
+                        <div className={styles.trackStop} ></div>
+                        <div className={styles.trackStart} ></div>
+                    </div>
+                    <div className={styles.eduContentContainer} >
+                        <div className={styles.eduLogo} >
+                            <img src="https://www.matpatra.com/Assets/Logo.svg" width="80px" alt="add-link" />
+                        </div>
+                        <div className={styles.eduInfo} >
+                            <p>July 2024 - currently</p>
+                            <h3>Tech Matpatra</h3>
+                            <p>Front End Intern</p>
                         </div>
                     </div>
                 </div>

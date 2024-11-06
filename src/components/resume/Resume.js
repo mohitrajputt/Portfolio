@@ -1,5 +1,5 @@
 import styles from "./Resume.module.css";
-import resumePdf from "../../assets/resume-511.pdf";
+import resumePdf from "../../assets/Mohit_resume_sde.pdf";
 import resumePng from "../../assets/resume-511.png";
 
 function Resume() {
