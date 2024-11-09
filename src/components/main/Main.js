@@ -5,7 +5,6 @@ import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 
-
 function Main() {
     const formatDate = () => {
         const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
@@ -58,11 +57,11 @@ function Main() {
                         <div className={styles.intro} >
                             <p>SOFTWARE DEVELOPER</p>
                             <h2>Mohit Rajput</h2>
-                            <p>As a budding Software Developer and Full Stack Developer, I bring a fresh perspective and a passion for crafting innovative solutions. While I may be a fresher, my project experiences showcase my dedication and potential in delivering impactful results.</p>
+                            <p>I'm a Full-stack developer, experienced in building responsive web applications using React, Next.js, and Angular. Skilled in both UI development and backend integration, I bring strong problem-solving abilities and a commitment to creating user-focused, scalable solutions.</p>
                         </div>
                         <div className={styles.address} >
                             <div className={styles.addressContainer} >
-                                <div className={styles.local} >Agra, UP</div>
+                                <div className={styles.local} >Gurugram, HR</div>
                                 <div className={styles.country} > <i className="fa-solid fa-location-dot"></i> <span>IND</span></div>
                             </div>
                             <div className={styles.circle} ></div>
@@ -105,7 +104,10 @@ function Main() {
                     {skills.map((skill, index) => (
                         <div className={styles.box} key={index} >
                             <div className={styles.aboutSkills} >
-                                <div className={styles.skillIcon} >{skill.title}</div>
+                                <div className={styles.skillIcon} >
+                                    {/* {skill.title} */}
+                                    {skill.icon}
+                                </div>
                                 <div className={styles.skillName} >
                                     <h3>{skill.text}</h3>
                                     <p>{skill.about}</p>
@@ -158,12 +160,12 @@ function Main() {
                     </div>
                     <div className={styles.eduContentContainer} >
                         <div className={styles.eduLogo} >
-                            <img src="https://dabotics.com/img/logo.svg" width="80px" alt="add-link" />
+                            <img src="https://www.matpatra.com/Assets/Logo.svg" width="80px" alt="add-link" />
                         </div>
                         <div className={styles.eduInfo} >
-                            <p>July-Aug 2023</p>
-                            <h3>Dabotics PVT LTD</h3>
-                            <p>Web Developer Intern</p>
+                            <p>July 2024 - currently</p>
+                            <h3>Tech Matpatra</h3>
+                            <p>Front End Intern</p>
                         </div>
                     </div>
                 </div>
@@ -174,12 +176,12 @@ function Main() {
                     </div>
                     <div className={styles.eduContentContainer} >
                         <div className={styles.eduLogo} >
-                            <img src="https://www.matpatra.com/Assets/Logo.svg" width="80px" alt="add-link" />
+                            <img src="https://dabotics.com/img/logo.svg" width="80px" alt="add-link" />
                         </div>
                         <div className={styles.eduInfo} >
-                            <p>July 2024 - currently</p>
-                            <h3>Tech Matpatra</h3>
-                            <p>Front End Intern</p>
+                            <p>July-Aug 2023</p>
+                            <h3>Dabotics PVT LTD</h3>
+                            <p>Web Developer Intern</p>
                         </div>
                     </div>
                 </div>

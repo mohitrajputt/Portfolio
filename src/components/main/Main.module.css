@@ -332,6 +332,9 @@ section {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 900;
 }
+.skillIcon svg {
+    font-size: 1.4rem;
+}
 
 .skillName{
     text-indent: 1cap;
@@ -364,8 +367,8 @@ section {
         padding: 22px 22px 82px 22px;
     }
     .skillIcon {
-        background-color: white;
-        color: black;
+        /* background-color: white; */
+        /* color: black; */
         border-radius: 6px;
     }
     .skillTotal{
