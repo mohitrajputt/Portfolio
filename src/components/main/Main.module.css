@@ -74,6 +74,7 @@ section {
     .userImage {
         display: none;
     }
+
     .quickDetails {
         width: auto;
     }
@@ -129,6 +130,13 @@ section {
     background: var(--gradient9);
     border: .75px solid rgb(252 252 252 / 5%);
     padding: 22px;
+}
+
+.lindInContainer {
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro {
@@ -211,10 +219,11 @@ section {
     .circle {
         display: none;
     }
+
     .quickLink {
         padding: 8px;
     }
-    
+
     .quickLink div p {
         margin: 8px 0;
         font-size: 1.8vw;
@@ -299,7 +308,7 @@ section {
     position: relative;
 }
 
-.extend{
+.extend {
     display: none;
 }
 
@@ -312,17 +321,17 @@ section {
     cursor: pointer;
 }
 
-.box{
+.box {
     margin-bottom: 18px;
 }
 
-.aboutSkills{
+.aboutSkills {
     display: flex;
     overflow: hidden;
     margin-bottom: 18px;
 }
 
-.skillIcon{
+.skillIcon {
     width: 60px;
     height: 100%;
     text-align: center;
@@ -332,18 +341,20 @@ section {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 900;
 }
+
 .skillIcon svg {
     font-size: 1.4rem;
 }
 
-.skillName{
+.skillName {
     text-indent: 1cap;
 }
 
-.skillName h3{
+.skillName h3 {
     margin: 0 0 3px 0;
 }
-.skillName p{
+
+.skillName p {
     margin: 0;
     font-size: 0.8rem;
 }
@@ -356,6 +367,7 @@ section {
     border-radius: 18px;
     overflow: hidden;
 }
+
 .skillValue {
     height: 100%;
     background-color: var(--primary);
@@ -366,21 +378,26 @@ section {
         grid-template-columns: repeat(1, 1fr);
         padding: 22px 22px 82px 22px;
     }
+
     .skillIcon {
         /* background-color: white; */
         /* color: black; */
         border-radius: 6px;
     }
-    .skillTotal{
+
+    .skillTotal {
         height: 12px;
     }
-    .extendLabel{
+
+    .extendLabel {
         display: block;
     }
+
     .box:nth-child(n + 7) {
         display: none;
     }
-    .extend[type="checkbox"]:checked ~ .box {
+
+    .extend[type="checkbox"]:checked~.box {
         display: block;
     }
 }
@@ -569,7 +586,7 @@ section {
     font-size: 1.1rem;
 }
 
-.form button:hover{
+.form button:hover {
     background-color: var(--primary);
     color: black;
 }
@@ -635,7 +652,8 @@ section {
     text-align: center;
     line-height: 50px;
 }
-.addressIcon i{
+
+.addressIcon i {
     color: var(--primary);
 }
 
@@ -668,12 +686,16 @@ section {
 }
 
 @media screen and (max-width: 700px) {
-    section{
+    section {
         margin-bottom: 0;
     }
-    .introSection, .backgroundSection, .connect, .skillSection {
-      background: none;
-      border: none;
-      padding: 8px 12px;
+
+    .introSection,
+    .backgroundSection,
+    .connect,
+    .skillSection {
+        background: none;
+        border: none;
+        padding: 8px 12px;
     }
 }

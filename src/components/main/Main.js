@@ -1,6 +1,6 @@
 import styles from "./Main.module.css";
-import {skills} from "../../data/SkillsData";
-import {projects} from "../../data/ProjectData";
+import { skills } from "../../data/SkillsData";
+import { projects } from "../../data/ProjectData";
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
@@ -59,12 +59,14 @@ function Main() {
                             <h2>Mohit Rajput</h2>
                             <p>I'm a Full-stack developer, experienced in building responsive web applications using React, Next.js, and Angular. Skilled in both UI development and backend integration, I bring strong problem-solving abilities and a commitment to creating user-focused, scalable solutions.</p>
                         </div>
-                        <div className={styles.address} >
-                            <div className={styles.addressContainer} >
+                        {/* <div className={styles.address} > */}
+                        <div className={styles.lindInContainer} >
+                            {/* <div className={styles.addressContainer} >
                                 <div className={styles.local} >Gurugram, HR</div>
                                 <div className={styles.country} > <i className="fa-solid fa-location-dot"></i> <span>IND</span></div>
                             </div>
-                            <div className={styles.circle} ></div>
+                            <div className={styles.circle} ></div> */}
+                            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="mohit-rajput-2789a0215" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/mohit-rajput-2789a0215?trk=profile-badge"></a></div>
                         </div>
                     </div>
                 </div>
@@ -91,13 +93,13 @@ function Main() {
                 <div className={styles.skillHeader} >
                     <div className={styles.headerContent} >
                         <p>Technical Skills  </p>
-                    </div> 
+                    </div>
                 </div>
                 <div className={styles.skillContent} >
                     <label className={styles.extendLabel} htmlFor="extend" onClick={() => setChecked(!checked)} >
                         {checked ?
-                        <i className="fa-solid fa-angles-up"></i> :
-                        <i className="fa-solid fa-angles-down"></i>
+                            <i className="fa-solid fa-angles-up"></i> :
+                            <i className="fa-solid fa-angles-down"></i>
                         }
                     </label>
                     <input type="checkbox" className={styles.extend} id="extend" />
@@ -114,128 +116,128 @@ function Main() {
                                 </div>
                             </div>
                             <div className={styles.skillTotal}>
-                                <div className={styles.skillValue} style={{ width: `${skill.value}%`}} > </div>
+                                <div className={styles.skillValue} style={{ width: `${skill.value}%` }} > </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
 
-        <section className={styles.backgroundSection} >
-            <div className={styles.education} >
-                <div className={styles.educationHeader} >Education</div>
-                <div className={styles.eduContent} >
-                    <div className={styles.trackPath} >
-                        <div className={styles.trackStop} ></div>
-                        <div className={styles.trackStart} ></div>
-                    </div>
-                    <div className={styles.eduContentContainer} >
-                        <div className={styles.eduLogo} >
-                            <img src="https://fetrbs.org/wp-content/uploads/2020/05/fetrbs-150x150.png" width="80px" alt="add-link" />
+            <section className={styles.backgroundSection} >
+                <div className={styles.education} >
+                    <div className={styles.educationHeader} >Education</div>
+                    <div className={styles.eduContent} >
+                        <div className={styles.trackPath} >
+                            <div className={styles.trackStop} ></div>
+                            <div className={styles.trackStart} ></div>
                         </div>
-                        <div className={styles.eduInfo} >
-                            <p>2020-2024</p>
-                            <h3>B.Tech From AKTU</h3>
-                            <p>Computer Science & Engineering</p>
+                        <div className={styles.eduContentContainer} >
+                            <div className={styles.eduLogo} >
+                                <img src="https://fetrbs.org/wp-content/uploads/2020/05/fetrbs-150x150.png" width="80px" alt="add-link" />
+                            </div>
+                            <div className={styles.eduInfo} >
+                                <p>2020-2024</p>
+                                <h3>B.Tech From AKTU</h3>
+                                <p>Computer Science & Engineering</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.eduContentContainer} >
-                        <div className={styles.eduLogo} >
-                            <img src="https://seeklogo.com/images/B/board-of-high-school-intermediate-uttar-pradesh-logo-C72295BBDE-seeklogo.com.png" width="80px" alt="add-link" />
-                        </div>
-                        <div className={styles.eduInfo} >
-                            <p>2016-2020</p>
-                            <h3>09-12th From UP Board</h3>
-                            <p>Physics, Chemistry & Math</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.experience} >
-                <div className={styles.experienceHeader} >Experience</div>
-                <div className={styles.eduContent} >
-                    <div className={styles.trackPath} >
-                        <div className={styles.trackStop} ></div>
-                        <div className={styles.trackStart} ></div>
-                    </div>
-                    <div className={styles.eduContentContainer} >
-                        <div className={styles.eduLogo} >
-                            <img src="https://www.matpatra.com/Assets/Logo.svg" width="80px" alt="add-link" />
-                        </div>
-                        <div className={styles.eduInfo} >
-                            <p>July 2024 - currently</p>
-                            <h3>Tech Matpatra</h3>
-                            <p>Front End Intern</p>
+                        <div className={styles.eduContentContainer} >
+                            <div className={styles.eduLogo} >
+                                <img src="https://seeklogo.com/images/B/board-of-high-school-intermediate-uttar-pradesh-logo-C72295BBDE-seeklogo.com.png" width="80px" alt="add-link" />
+                            </div>
+                            <div className={styles.eduInfo} >
+                                <p>2016-2020</p>
+                                <h3>09-12th From UP Board</h3>
+                                <p>Physics, Chemistry & Math</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={styles.eduContent} >
-                    <div className={styles.trackPath} >
-                        <div className={styles.trackStop} ></div>
-                        <div className={styles.trackStart} ></div>
-                    </div>
-                    <div className={styles.eduContentContainer} >
-                        <div className={styles.eduLogo} >
-                            <img src="https://dabotics.com/img/logo.svg" width="80px" alt="add-link" />
+                <div className={styles.experience} >
+                    <div className={styles.experienceHeader} >Experience</div>
+                    <div className={styles.eduContent} >
+                        <div className={styles.trackPath} >
+                            <div className={styles.trackStop} ></div>
+                            <div className={styles.trackStart} ></div>
                         </div>
-                        <div className={styles.eduInfo} >
-                            <p>July-Aug 2023</p>
-                            <h3>Dabotics PVT LTD</h3>
-                            <p>Web Developer Intern</p>
+                        <div className={styles.eduContentContainer} >
+                            <div className={styles.eduLogo} >
+                                <img src="https://www.matpatra.com/Assets/Logo.svg" width="80px" alt="add-link" />
+                            </div>
+                            <div className={styles.eduInfo} >
+                                <p>July 2024 - currently</p>
+                                <h3>Tech Matpatra</h3>
+                                <p>Front End Intern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.eduContent} >
+                        <div className={styles.trackPath} >
+                            <div className={styles.trackStop} ></div>
+                            <div className={styles.trackStart} ></div>
+                        </div>
+                        <div className={styles.eduContentContainer} >
+                            <div className={styles.eduLogo} >
+                                <img src="https://dabotics.com/img/logo.svg" width="80px" alt="add-link" />
+                            </div>
+                            <div className={styles.eduInfo} >
+                                <p>July-Aug 2023</p>
+                                <h3>Dabotics PVT LTD</h3>
+                                <p>Web Developer Intern</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section className={styles.connect} id="contactSection" >
-            <div className={styles.connectHeader} >
-                <div>Contact</div>
-            </div>
-            <div className={styles.connectContent} >
-                <form className={styles.form} onSubmit={handleSubmit} >
-                    <input placeholder="Name" name="from_name" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-                    <input placeholder="Email" name="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <textarea placeholder="Message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
-                    <button type="submit" >Submit</button>
-                </form>
-                <div className={styles.connectInfoBox} >
-                    <div className={styles.addressHead} >Address</div>
-                    <div className={styles.addressContentContainer} >
-                        <div className={styles.addressInfoContainer} >
-                            <div className={styles.connectInfoHead} >
-                                <div className={styles.addressIcon} >
-                                    <i className="fa-solid fa-map-location-dot"></i>
+            <section className={styles.connect} id="contactSection" >
+                <div className={styles.connectHeader} >
+                    <div>Contact</div>
+                </div>
+                <div className={styles.connectContent} >
+                    <form className={styles.form} onSubmit={handleSubmit} >
+                        <input placeholder="Name" name="from_name" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+                        <input placeholder="Email" name="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                        <textarea placeholder="Message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
+                        <button type="submit" >Submit</button>
+                    </form>
+                    <div className={styles.connectInfoBox} >
+                        <div className={styles.addressHead} >Address</div>
+                        <div className={styles.addressContentContainer} >
+                            <div className={styles.addressInfoContainer} >
+                                <div className={styles.connectInfoHead} >
+                                    <div className={styles.addressIcon} >
+                                        <i className="fa-solid fa-map-location-dot"></i>
+                                    </div>
+                                </div>
+                                <div className={styles.addressinfo} >
+                                    <p>Visit Me</p>
+                                    <p>283101-Agra, Uttar Pradesh, INDIA</p>
                                 </div>
                             </div>
-                            <div className={styles.addressinfo} >
-                                <p>Visit Me</p>
-                                <p>283101-Agra, Uttar Pradesh, INDIA</p>
-                            </div>
-                        </div>
-                        <div className={styles.addressInfoContainer} >
-                            <div className={styles.connectInfoHead} >
-                                <div className={styles.addressIcon} >
-                                    <i className="fa-solid fa-address-card"></i>
+                            <div className={styles.addressInfoContainer} >
+                                <div className={styles.connectInfoHead} >
+                                    <div className={styles.addressIcon} >
+                                        <i className="fa-solid fa-address-card"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={styles.addressinfo} >
-                                <p>Contact Info</p>
-                                <p>+91 9997656397</p>
-                                <p>999mohitrajput@gmail.com</p>
+                                <div className={styles.addressinfo} >
+                                    <p>Contact Info</p>
+                                    <p>+91 9997656397</p>
+                                    <p>999mohitrajput@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <footer>
-            <div >Developed by Mohit Rajput</div>
-            <div>
-                <a href="#scrolltop" >Scroll To Top <span>&#8673;</span></a>
-            </div>
-        </footer> 
+            <footer>
+                <div >Developed by Mohit Rajput</div>
+                <div>
+                    <a href="#scrolltop" >Scroll To Top <span>&#8673;</span></a>
+                </div>
+            </footer>
         </>
     )
 }
